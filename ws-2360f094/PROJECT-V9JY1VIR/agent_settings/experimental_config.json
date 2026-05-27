@@ -1,0 +1,24 @@
+{
+  "asr": {
+    "eager_final": false,
+    "model": "nova-3",
+    "provider": "deepgram"
+  },
+  "barge_in": {
+    "is_enabled": true,
+    "trigger": {
+      "speech_threshold": 0.8,
+      "speech_window_ms": 200
+    }
+  },
+  "conversation_control": {
+    "max_silence_count": 3,
+    "min_chunk_size": 3
+  },
+  "llm": {
+    "provider_model_id": "polywhirl-3-5"
+  },
+  "vad": {
+    "provider": "aicoustics-experimental"
+  }
+}

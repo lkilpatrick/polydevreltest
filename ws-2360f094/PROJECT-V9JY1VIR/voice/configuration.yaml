@@ -1,0 +1,9 @@
+greeting:
+  welcome_message: Hello, how can I help you?
+  language_code: en-us
+style_prompt:
+  prompt: ''
+disclaimer_messages:
+  message: ''
+  enabled: false
+  language_code: en-us

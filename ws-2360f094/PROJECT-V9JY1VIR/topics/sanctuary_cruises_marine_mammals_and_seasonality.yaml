@@ -1,0 +1,49 @@
+name: Sanctuary Cruises Marine Mammals And Seasonality
+enabled: true
+example_queries:
+  - What marine mammals might we see?
+  - When can I see blue whales?
+  - Are orcas in Monterey Bay now?
+  - What dolphins are common there?
+  - Do you see sea otters?
+  - What is the best season for humpbacks?
+  - What whale species are in Monterey Bay?
+  - What sea lions and seals are around Moss Landing?
+  - Are elephant seals around in winter?
+  - Is marine life guaranteed?
+content: |-
+  Monterey Bay supports rich marine mammal diversity, but sightings are wildlife-dependent and never guaranteed.
+
+  Whale seasonality from Sanctuary Cruises marine-life pages:
+  - Humpback Whale: year round, peak Apr-Nov.
+  - Blue Whale: Jun-Oct.
+  - Fin Whale: year round, peak Sep-Dec.
+  - Gray Whale: Dec-May.
+  - Baird's Beaked Whale: Jun-Oct.
+
+  Dolphin seasonality from Sanctuary Cruises marine-life pages:
+  - Orca/Killer Whale: year round, peak Apr-May.
+  - Risso's Dolphin: year round.
+  - Pacific White-Sided Dolphin: year round, peak winter.
+  - Long-Beaked Common Dolphin: summer and fall.
+  - Northern Right Whale Dolphin: year round.
+  - Pacific Offshore Bottlenose Dolphin: year round, unpredictable.
+
+  Pinnipeds and otters from Sanctuary Cruises marine-life pages:
+  - Sea Otter: year round in local harbor/slough systems.
+  - California Sea Lion: year round.
+  - Harbor Seal: year round.
+  - Steller Sea Lion: fall-spring.
+  - Northern Elephant Seal: winter-spring.
+
+  Monterey Bay conditions and food-web dynamics can shift quickly, so species mix varies by day and sea state.
+actions: |-
+  Answer marine mammal questions using the seasonality and species list in the content.
+
+  Clearly state that sightings are common but never guaranteed.
+
+  If the caller wants to pick dates with the best chance for certain species, provide season guidance and then offer booking help.
+
+  If the caller wants to book after discussing species, collect booking details and use {{fn:lookup_fareharbor_availability}}.
+
+  If the question shifts to weather, sea condition safety, medical issues, accessibility, service animals, refunds, cancellations, or urgent requests, use {{fn:escalate_call}}.

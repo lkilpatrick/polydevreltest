@@ -1,0 +1,118 @@
+{
+  "source": "https://sanctuarycruises.com/marine-life/",
+  "scraped_utc": "2026-05-27T03:00:00Z",
+  "note": "Website-derived marine mammal reference for demo knowledge. Wildlife presence is variable and not guaranteed.",
+  "whales": [
+    {
+      "common_name": "Humpback Whale",
+      "scientific_name": "Megaptera novaeangliae",
+      "seasonality": "Year round (peak Apr-Nov)",
+      "length_ft": "40-50",
+      "weight": "up to 40 tons",
+      "conservation_status": "Least Concern"
+    },
+    {
+      "common_name": "Blue Whale",
+      "scientific_name": "Balaenoptera musculus",
+      "seasonality": "Summer and Fall (Jun-Oct)",
+      "length_ft": "up to 100",
+      "weight": "up to 200 tons",
+      "conservation_status": "Endangered"
+    },
+    {
+      "common_name": "Fin Whale",
+      "scientific_name": "Balaenoptera physalus",
+      "seasonality": "Year round (peak Sep-Dec)",
+      "length_ft": "60-80",
+      "weight": "40-80 tons",
+      "conservation_status": "Vulnerable"
+    },
+    {
+      "common_name": "Gray Whale",
+      "scientific_name": "Eschrichtius robustus",
+      "seasonality": "Winter and Spring (Dec-May)",
+      "length_ft": "40-50",
+      "weight": "30-40 tons",
+      "conservation_status": "Least Concern (Eastern North Pacific population)"
+    },
+    {
+      "common_name": "Baird's Beaked Whale",
+      "scientific_name": "Berardius bairdii",
+      "seasonality": "Summer and Fall (Jun-Oct)",
+      "length_ft": "35-42",
+      "weight": "10-12 tons",
+      "conservation_status": "Least Concern"
+    }
+  ],
+  "dolphins": [
+    {
+      "common_name": "Orca / Killer Whale",
+      "scientific_name": "Orcinus orca",
+      "seasonality": "Year round (peak Apr-May)",
+      "highlights": "Transient orcas can target migrating gray whale calves in spring"
+    },
+    {
+      "common_name": "Risso's Dolphin",
+      "scientific_name": "Grampus griseus",
+      "seasonality": "Year round",
+      "highlights": "Deep-water squid hunter; common in Monterey Bay"
+    },
+    {
+      "common_name": "Pacific White-Sided Dolphin",
+      "scientific_name": "Lagenorhynchus obliquidens",
+      "seasonality": "Year round (peak winter)",
+      "highlights": "Acrobatic bow-riding; large pods possible"
+    },
+    {
+      "common_name": "Long-Beaked Common Dolphin",
+      "scientific_name": "Delphinus capensis",
+      "seasonality": "Summer and Fall",
+      "highlights": "Superpods can form in favorable feeding conditions"
+    },
+    {
+      "common_name": "Northern Right Whale Dolphin",
+      "scientific_name": "Lissodelphis borealis",
+      "seasonality": "Year round",
+      "highlights": "No dorsal fin; often mixed with Pacific white-sided dolphins"
+    },
+    {
+      "common_name": "Pacific Offshore Bottlenose Dolphin",
+      "scientific_name": "Tursiops truncatus",
+      "seasonality": "Year round",
+      "highlights": "Unpredictable offshore visitors"
+    }
+  ],
+  "pinnipeds_and_otters": [
+    {
+      "common_name": "Sea Otter (Southern Sea Otter)",
+      "scientific_name": "Enhydra lutris nereis",
+      "seasonality": "Year round",
+      "conservation_status": "Endangered",
+      "highlights": "Keystone species; Elkhorn Slough supports high local density"
+    },
+    {
+      "common_name": "California Sea Lion",
+      "scientific_name": "Zalophus californianus",
+      "seasonality": "Year round",
+      "conservation_status": "Least Concern"
+    },
+    {
+      "common_name": "Harbor Seal",
+      "scientific_name": "Phoca vitulina",
+      "seasonality": "Year round",
+      "conservation_status": "Least Concern"
+    },
+    {
+      "common_name": "Steller Sea Lion",
+      "scientific_name": "Eumetopias jubatus",
+      "seasonality": "Fall-Spring",
+      "conservation_status": "Near Threatened"
+    },
+    {
+      "common_name": "Northern Elephant Seal",
+      "scientific_name": "Mirounga angustirostris",
+      "seasonality": "Winter and Spring",
+      "conservation_status": "Least Concern"
+    }
+  ]
+}
