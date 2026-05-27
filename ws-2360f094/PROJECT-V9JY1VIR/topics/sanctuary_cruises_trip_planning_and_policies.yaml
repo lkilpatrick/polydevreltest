@@ -1,0 +1,82 @@
+name: Sanctuary Cruises Trip Planning And Policies
+enabled: true
+actions: |-
+  Use this topic for general trip planning, vessel questions, booking expectations, and policy boundary questions.
+
+  Keep answers concise and practical for a phone call.
+
+  For booking intent, collect desired date, trip type, adult count, and child count, then use {{fn:lookup_fareharbor_availability}}.
+
+  Never guarantee wildlife, weather, sea conditions, or specific species.
+
+  For refunds, cancellations, rescheduling, weather safety decisions, accessibility or service-animal accommodations, medical concerns, payment problems, complaints, private charter logistics, or urgent same-day requests, use {{fn:escalate_call}}.
+content: |-
+  Sanctuary Cruises operates whale watching and marine wildlife tours from Moss Landing, California, in Monterey Bay.
+
+  Contact and location:
+  - Phone: 831-917-1042
+  - Email: crew@sanctuarycruises.com
+  - Location: Moss Landing, CA 95039
+
+  Main cruise options:
+  - Whale Watching on Monterey Bay: up to 4 hours.
+  - Sunset Whale Watching Cruise: up to 3 hours.
+  - All Day Trip Around Monterey Bay: up to 9 hours.
+  - Marine Wildlife Photography Tour: listed around 5+ hours depending on offering.
+  - Custom Boat Charters and Private Charter Whale Watching: private options subject to availability.
+
+  Vessel basics:
+  - Main vessel is Sanctuary, a 43-foot Delta Marine twin-engine whale watching vessel.
+  - Indoor seating and outdoor viewing areas.
+  - Heated cabin and marine head (restroom).
+  - Coast Guard certified and fully insured.
+
+  Wildlife expectations:
+  - Common sightings can include whales, dolphins, sea lions, sea otters, seals, seabirds, and other marine wildlife.
+  - Monterey Bay conditions change daily; sightings are common but never guaranteed.
+
+  Species and seasonality highlights from Sanctuary marine-life pages:
+  - Humpback Whale: year round, peak Apr-Nov.
+  - Blue Whale: Jun-Oct.
+  - Fin Whale: year round, peak Sep-Dec.
+  - Gray Whale: Dec-May.
+  - Baird's Beaked Whale: Jun-Oct.
+  - Orca/Killer Whale: year round, peak Apr-May.
+  - Risso's Dolphin: year round.
+  - Pacific White-Sided Dolphin: year round, peak winter.
+  - Long-Beaked Common Dolphin: summer and fall.
+  - Northern Right Whale Dolphin: year round.
+  - Pacific Offshore Bottlenose Dolphin: year round, unpredictable.
+  - Sea Otter: year round.
+  - California Sea Lion: year round.
+  - Harbor Seal: year round.
+  - Steller Sea Lion: fall-spring.
+  - Northern Elephant Seal: winter-spring.
+
+  Additional ecosystem context from Sanctuary pages:
+  - Monterey Bay Submarine Canyon drives nutrient upwelling and supports rich biodiversity.
+  - Depending on season and conditions, other wildlife may include mola mola, sea turtles, sharks, and large seabird aggregations.
+
+  Booking and policy boundaries:
+  - FareHarbor is the source of truth for live availability, final pricing, payment, and confirmation.
+  - The assistant can help pick a trip and check availability, but should not claim final pricing or confirmed seats without FareHarbor confirmation.
+  - Do not process credit card numbers by voice.
+
+  Escalate to crew for:
+  - Refunds, cancellations, and rescheduling.
+  - Weather or rough-sea safety decisions.
+  - Seasickness, medical, or pregnancy concerns.
+  - Accessibility or service-animal questions.
+  - Private charter planning details.
+  - Payment issues and complaints.
+  - Urgent requests within 24 hours of departure.
+example_queries:
+- Which cruise should I choose for first-time visitors?
+- What wildlife do you usually see in Monterey Bay?
+- Are blue whales around in late summer?
+- Do you guarantee whale sightings?
+- Is the boat accessible for someone with mobility needs?
+- Can I bring a service animal?
+- What if the weather looks rough?
+- Can I book a private charter for an event?
+- How long is the standard whale watching cruise?

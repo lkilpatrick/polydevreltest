@@ -1,0 +1,27 @@
+step_type: default_step
+name: Collect Party Size
+prompt: |
+  ## Collect party size
+
+  Ask how many adults and children are in the party. If the caller only gives a total, capture party_size and politely ask whether any are children because pricing and ticket options may vary in FareHarbor.
+
+  Trip type: {{entity:trip_type}}
+  Date: {{entity:trip_date}}
+  Adults: {{entity:adult_count}}
+  Children: {{entity:child_count}}
+  Total: {{entity:party_size}}
+
+  Once you have enough information to check availability, move to the next step.
+conditions:
+  - name: has_party_size
+    condition_type: step_condition
+    description: Caller has provided enough party size information to check availability
+    required_entities:
+      - trip_type
+      - trip_date
+      - party_size
+    child_step: check_fareharbor_availability
+extracted_entities:
+  - adult_count
+  - child_count
+  - party_size

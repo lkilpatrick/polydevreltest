@@ -1,114 +1,153 @@
-# Sanctuary Cruises PolyAI ADK Demo
+# Sanctuary Cruises — PolyAI ADK Demo Project
 
-This project is a realistic, production-minded voice reservation assistant demo for Sanctuary Cruises.
+A full-featured PolyAI ADK voice agent for **Sanctuary Cruises**, a Monterey Bay whale watching company based in Moss Landing, California. Built as a DevRel interview demo to show real-world ADK patterns.
 
-This demo shows how a voice agent can be built like software: local development, tool boundaries, source-of-truth discipline, testable conversation flows, and safe escalation.
+---
 
-## Project Goal
+## Agent Capabilities
 
-Build a voice agent that can:
-- answer common customer questions
-- help callers choose the right cruise
-- collect booking intent details
-- check FareHarbor availability with layered fallbacks
-- escalate sensitive or high-risk requests to human crew
+| Capability | Mechanism |
+|---|---|
+| Check live trip availability | `lookup_fareharbor_availability` global function |
+| Guided booking flow with entity collection | `Booking Flow` (4 steps + 1 function step) |
+| Private charter routing | Private charter branch in function step |
+| FAQ answering | `FAQ` topic + knowledge base |
+| Human escalation | `escalate_call` global function |
+| Clean call end | `goodbye_and_hang_up` global function |
+| Start booking from any topic | `start_booking_flow` global function |
+| Keyphrase and pronunciation tuning | speech_recognition + response_control files |
 
-## What the Agent Does
+---
 
-The Sanctuary Cruises Reservation Assistant is configured to:
-- greet callers and clarify intent
-- answer trip FAQs with concise, practical responses
-- collect booking details (date, trip type, adults, children, name, contact)
-- call an availability tool that is API-first with live/no-key fallback paths
-- route policy-sensitive issues to human escalation
+## Project Structure
 
-Safety and policy boundaries include:
-- no credit card collection by voice
-- no guarantee of whales, weather, sea state, or specific species
-- mandatory human escalation for cancellations/refunds, accessibility, service animals, medical concerns, payment issues, complaints, private charters, and urgent same-day requests
+```
+PROJECT-V9JY1VIR/
+  agent_settings/         # Personality, role, rules
+  config/
+    entities.yaml         # 10 shared entities
+  data/
+    whale_watch_schedule_next_3_months.json   # Jun-Aug 2026 schedule snapshot
+    marine_mammals_reference.json             # Species reference
+  docs/
+    source_notes.md       # Attribution for all data sources
+  flows/
+    booking_flow/
+      flow_config.yaml
+      steps/              # collect_trip_type, collect_date, collect_party_size, collect_contact
+      function_steps/     # check_fareharbor_availability
+  functions/              # Global ADK functions
+  integrations/
+    fareharbor.py         # FareHarbor helper module
+  knowledge/
+    sanctuary_cruises_knowledge.md
+  topics/                 # Book a Cruise, FAQ, Human Handoff, Private Charter
+                          # + sanctuary_cruises_marine_mammals_and_seasonality
+                          # + sanctuary_cruises_trip_planning_and_policies
+  voice/
+    speech_recognition/   # keyphrase_boosting.yaml, transcript_corrections.yaml, asr_settings.yaml
+    response_control/     # pronunciations.yaml
+    configuration.yaml
+```
 
-## FareHarbor Tool
+---
 
-Function: lookup_fareharbor_availability
+## Environment Variables (FareHarbor)
 
-Inputs:
-- trip_type
-- requested_date
-- adults
-- children
+For live FareHarbor External API access, set these in your PolyAI environment or `.env`:
 
-Behavior:
-- if FareHarbor API keys are configured, queries live FareHarbor External API availabilities for the requested date
-- if keys are missing (or External API fails), tries FareHarbor embed-backed public endpoints (no-key)
-- if embed-backed lookup fails, falls back to local snapshot/mock behavior
-- returns departure options with time, duration, status, spots left, and booking URL
-- supports whale watching, sunset cruise, photography tour, and private charter handling
-- returns human_required for private charter requests
-- flags when party size exceeds available spots and suggests alternate departure or handoff
-- marks whether data is live or mock via response fields
+```
+FAREHARBOR_API_APP=your_app_key_here
+FAREHARBOR_API_USER=your_user_key_here
+FAREHARBOR_COMPANY_SHORTNAME=sanctuarycruises
+FAREHARBOR_BASE_URL=https://fareharbor.com/api/external/v1
+```
 
-Live API configuration:
-- set FH_API_APP and FH_API_USER for FareHarbor External API authentication
-- optional: set FH_COMPANY_SHORTNAME (defaults to sanctuarycruises)
-- optional: set FH_EMBED_FLOW_ID for embed item discovery (defaults to 1127725)
-- optional: set FH_WHALE_WATCHING_ITEM_PK, FH_SUNSET_CRUISE_ITEM_PK, FH_PHOTOGRAPHY_TOUR_ITEM_PK to pin item IDs instead of auto-matching by item name
-- FareHarbor embed values (for example /embeds/book/... links, shortname, or flow IDs) are booking widget configuration only and are not External API credentials
+If these are not set, the agent falls back to the public embed calendar API (no key required). If that also fails, it uses the local schedule snapshot in `data/`.
 
-Embed fallback notes:
-- source field is fareharbor_embed_api when no-key embed endpoints are used
-- this path is live but unofficial compared to External API and may change without notice
-
-Boundary:
-- FareHarbor remains the source of truth for real-time availability, pricing, payment, confirmation, and post-booking changes.
-
-## What Changes in Production
-
-In production, you would:
-- keep the live API mode and add stronger retry/backoff and monitoring
-- add observability, analytics, and call outcome dashboards
-- enforce stricter PII handling and compliance controls
-- connect escalation to live transfer or CRM/ticketing workflows
-
-## Interview Walkthrough Value
-
-This demo highlights ADK value for developer relations by showing:
-- a clean prompt/tool architecture
-- explicit guardrails and escalation logic
-- source-of-truth discipline around third-party systems
-- testable, repeatable conversation scenarios
-- practical local iteration with ADK CLI commands
+---
 
 ## Quick Start
 
-1. Activate environment:
+```bash
+# Activate virtual environment
+.venv\Scripts\Activate.ps1
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
+# Check current branch
+poly branch current
 
-2. Validate project:
-
-```powershell
+# Validate all files
 poly validate
+
+# Diff against main
+poly diff
+
+# Push to branch
+poly push
 ```
 
-3. Inspect docs and behavior rules:
+---
 
-```powershell
-poly docs --all --output rules.md
+## ADK Patterns Demonstrated
+
+### Global Functions
+- `lookup_fareharbor_availability` — LLM-callable with `@func_description`, fetches live FareHarbor data
+- `start_booking_flow` — Redirects caller into the Booking Flow
+- `escalate_call` — Logs escalation reason, returns crew contact
+- `goodbye_and_hang_up` — Returns `{"hangup": True}`
+
+### Flow Design
+- 4 default steps collect `trip_type`, `trip_date`, `party_size`, and `contact`
+- 1 function step (`check_fareharbor_availability`) calls the live integration, interprets results, and decides next step via `flow.goto_step()` or `conv.exit_flow()`
+- Private charter branch exits the flow early with escalation instructions
+
+### Entities Used
+- `trip_type` (free_text), `trip_date` (date), `adult_count`/`child_count`/`party_size` (numeric), `contact_phone` (phone_number), `contact_email`/`occasion` (free_text), `customer_name` (name_config)
+
+### Topics
+- Each topic has `name`, `enabled`, `example_queries`, `content`, and `actions`
+- `actions` references functions using `{{fn:function_name}}`
+- Topics escalate when needed rather than over-promising
+
+---
+
+## Test Prompts
+
+```
+"Do you have any whale watching trips available this Saturday morning?"
+"I want to book two adults and one child for next Friday."
+"What are the chances of seeing blue whales in July?"
+"Can you do a private charter for a birthday party of 30?"
+"What should I bring on the trip?"
+"I need to cancel my booking."
+"Can I speak to someone?"
 ```
 
-4. Optional interactive setup (if needed):
+---
 
-```powershell
-poly start
-poly init
-```
+## Live Data Verified
 
-## Files to Review
+FareHarbor public calendar API confirmed working as of May 2026:
+- Endpoint: `https://fareharbor.com/api/v1/companies/sanctuarycruises/items/25836/calendar/2026/05/`
+- May 29, 2026: 8:00 AM departure, 7 spots available, `is_bookable: true`
 
-- agent behavior and policies: agent_settings/rules.txt
-- role and personality: agent_settings/role.yaml, agent_settings/personality.yaml
-- mock booking tool: functions/lookup_fareharbor_availability.py
-- knowledge content: SANCTUARY_CRUISES_KNOWLEDGE.md
-- conversation tests: CONVERSATION_TEST_CASES.md
+---
+
+## Interview Walkthrough
+
+1. **Intro** — Show project structure and explain the agent's role
+2. **Live call demo** — Ask for availability on a near-future date; agent calls FareHarbor, reads back times
+3. **Booking flow** — Walk through trip type → date → party size → availability check
+4. **Escalation** — Ask to cancel a booking; agent gracefully hands off
+5. **FAQ** — Ask about seasickness; agent answers from knowledge base without hallucinating
+6. **Architecture questions** — Explain flow/topic/function layering and FareHarbor integration strategy
+
+---
+
+## FareHarbor Item PKs Reference
+
+| Item | PK |
+|---|---|
+| Whale Watching 2-3 hr | 25836 |
+| Whale Watching 3-4 hr | 25833 |
+| Embed flow ID | 1127725 |

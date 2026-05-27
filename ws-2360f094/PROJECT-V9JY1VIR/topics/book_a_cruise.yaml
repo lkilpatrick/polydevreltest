@@ -1,0 +1,37 @@
+name: Book a Cruise
+enabled: true
+example_queries:
+  - I want to book a whale watching trip
+  - Do you have anything available on Saturday?
+  - How much does it cost to go whale watching?
+  - Can I book online or do I have to call?
+  - I'd like to make a reservation for two adults
+  - Can you check if there's room on the 15th?
+  - We're looking to book something for next weekend
+  - How do I reserve a spot on a cruise?
+  - I want to see whales this weekend, do you have space?
+  - Is there a morning trip available?
+content: |
+  Sanctuary Cruises is located in Moss Landing, California on Monterey Bay.
+
+  Trip types and prices:
+  - Whale watching (3–4 hours): $65 adults, $35 children 3–12. Most popular trip. Year-round.
+  - Whale watching (2–3 hours): $50 adults, $30 children. Shorter morning or afternoon trip.
+  - Sunset cruise (up to 3 hours): $75 adults. Relaxed evening trip with stunning bay views.
+  - All-day trip (up to 9 hours): $200 adults. Maximum offshore wildlife time. Limited seats.
+  - Photography tour (up to 5 hours): $150 adults. Extra time and positioning for photographers.
+  - Private charter: Custom pricing. Contact crew. Minimum 6 guests for most vessels.
+
+  Booking is handled through FareHarbor at sanctuarycruises.com. Customers can also call 831-917-1042 to book.
+
+  Trips depart from Moss Landing harbor. Most standard trips depart 8:00 AM or later.
+
+  Children under 3 ride free. Infants must be discussed with crew. Life jackets are provided.
+actions: |
+  When a caller wants to book, check availability, find trip times, or ask about seats, use {{fn:start_booking_flow}} to begin the booking flow.
+
+  If the caller asks for pricing only without wanting to book, answer from the content above.
+
+  Never confirm a booking as complete. Always direct the caller to FareHarbor or 831-917-1042 to finalize payment and receive a confirmation.
+
+  If the caller wants a private charter, collect their details and use {{fn:escalate_call}}.

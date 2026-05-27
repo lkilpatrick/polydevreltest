@@ -1,0 +1,39 @@
+keyphrase_boosting:
+  - phrase: "Sanctuary Cruises"
+    boost: maximum
+  - phrase: "Moss Landing"
+    boost: maximum
+  - phrase: "Monterey Bay"
+    boost: maximum
+  - phrase: "FareHarbor"
+    boost: boosted
+  - phrase: "whale watching"
+    boost: boosted
+  - phrase: "humpback whale"
+    boost: boosted
+  - phrase: "blue whale"
+    boost: boosted
+  - phrase: "gray whale"
+    boost: boosted
+  - phrase: "orca"
+    boost: boosted
+  - phrase: "killer whale"
+    boost: boosted
+  - phrase: "Risso's dolphin"
+    boost: boosted
+  - phrase: "Pacific white-sided dolphin"
+    boost: boosted
+  - phrase: "mola mola"
+    boost: boosted
+  - phrase: "sea otter"
+    boost: boosted
+  - phrase: "sea lions"
+    boost: boosted
+  - phrase: "private charter"
+    boost: boosted
+  - phrase: "all-day trip"
+    boost: boosted
+  - phrase: "sunset cruise"
+    boost: boosted
+  - phrase: "photography tour"
+    boost: boosted

@@ -1,0 +1,29 @@
+step_type: default_step
+name: Collect Trip Type
+prompt: |
+  ## Collect trip type
+
+  Ask which Sanctuary Cruises trip the caller is interested in.
+
+  Available options:
+  - whale watching (standard 3 to 4 hour trip, most popular)
+  - sunset cruise (up to 3 hours, relaxed evening trip)
+  - all-day trip (up to 9 hours, maximum wildlife time)
+  - photography tour (up to 5 hours, ideal for photographers)
+  - private charter (requires crew follow-up)
+  - not sure yet
+
+  If they are unsure, recommend the standard whale watching cruise for most guests, the sunset cruise for a relaxed evening trip, the all-day trip for maximum wildlife time, and the photography tour for serious photographers.
+
+  Trip type so far: {{entity:trip_type}}
+
+  Once the caller has chosen a trip type or says they are not sure, move to the next step.
+conditions:
+  - name: has_trip_type
+    condition_type: step_condition
+    description: Caller has chosen a trip type or says they are not sure
+    required_entities:
+      - trip_type
+    child_step: Collect Date
+extracted_entities:
+  - trip_type

@@ -1,0 +1,56 @@
+name: FAQ
+enabled: true
+example_queries:
+  - What should I bring on the trip?
+  - Is it going to be cold on the boat?
+  - What if I get seasick?
+  - Are kids allowed?
+  - Can I bring my dog?
+  - Do you serve food on the boat?
+  - How far out do you go?
+  - Is there a bathroom on the boat?
+  - What happens if the trip gets cancelled?
+  - What is your cancellation policy?
+  - Do I need to print a ticket?
+  - How early should I arrive?
+  - Is there parking at Moss Landing?
+  - Are life jackets provided?
+  - What if the weather is bad?
+content: |
+  ## What to bring
+  Dress in warm layers even in summer — Monterey Bay can be cold on the water. A hat, gloves, and a windbreaker are recommended. Sunscreen is always a good idea. Bring sunglasses. Motion sickness medicine should be taken 30 to 60 minutes before departure if needed.
+
+  ## Seasickness
+  Monterey Bay can have swells. If prone to motion sickness, take non-drowsy medication before boarding. Staring at the horizon and staying on deck can help. Ginger candies can also ease symptoms. If in doubt, consult a doctor.
+
+  ## Pets
+  Only service animals with proper documentation are allowed on board.
+
+  ## Food and drinks
+  Snacks and water are recommended. Some vessels have a small galley. Alcohol is not permitted without prior arrangement.
+
+  ## Facilities
+  Boats have restrooms. Most standard trips do not have full galley service.
+
+  ## Children
+  Children are welcome. Life jackets are provided for all guests. Children under 3 ride free. Children under 16 must be accompanied by an adult.
+
+  ## Tickets
+  Show your FareHarbor confirmation email on your phone or printed out. Arrive at least 20 minutes before departure.
+
+  ## Parking
+  Free parking is available at the Moss Landing harbor area.
+
+  ## Cancellations
+  If Sanctuary Cruises cancels due to weather or mechanical issues, guests receive a full refund or reschedule. For guest-initiated cancellations, see FareHarbor booking terms.
+
+  ## What to expect
+  Trips depart from Moss Landing harbor. Standard trips go 2 to 20+ miles offshore depending on wildlife activity and conditions. Sightings are common but never guaranteed.
+actions: |
+  Answer common questions about the Sanctuary Cruises experience from the content above.
+
+  For questions about refunds, rescheduling, or booking changes, use {{fn:escalate_call}}.
+
+  Never guarantee wildlife sightings, specific species, or weather conditions.
+
+  If a question cannot be answered from the content, offer to connect with the crew: 831-917-1042 or crew@sanctuarycruises.com.

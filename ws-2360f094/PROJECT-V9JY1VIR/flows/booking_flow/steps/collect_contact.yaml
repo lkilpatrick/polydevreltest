@@ -1,0 +1,22 @@
+step_type: default_step
+name: Collect Contact
+prompt: |
+  ## Collect contact details
+
+  Ask for the caller's name and either phone number or email so the crew can follow up if needed.
+
+  Name: {{entity:customer_name}}
+  Phone: {{entity:contact_phone}}
+  Email: {{entity:contact_email}}
+
+  Do not ask for credit card information. Once name and at least one contact method are collected, summarize what was gathered and let the caller know the crew may follow up, then exit.
+conditions:
+  - name: has_contact
+    condition_type: exit_flow_condition
+    description: Caller has provided name and at least one contact method
+    required_entities:
+      - customer_name
+extracted_entities:
+  - customer_name
+  - contact_phone
+  - contact_email

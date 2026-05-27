@@ -1,0 +1,21 @@
+pronunciations:
+  - regex: "\\bFareHarbor\\b"
+    replacement: "Fair Harbor"
+    case_sensitive: false
+    description: Ensure TTS reads FareHarbor as two clearly separated words
+  - regex: "\\bRisso's\\b"
+    replacement: "Reesohz"
+    case_sensitive: false
+    description: Fix pronunciation of Risso's dolphin species name
+  - regex: "\\bmola mola\\b"
+    replacement: "Moh-lah Moh-lah"
+    case_sensitive: false
+    description: Fix pronunciation of ocean sunfish scientific name
+  - regex: "\\bMoss Landing\\b"
+    replacement: "Moss Landing"
+    case_sensitive: false
+    description: Ensure natural pronunciation of harbor location
+  - regex: "\\bMonterey\\b"
+    replacement: "Mon-tuh-Ray"
+    case_sensitive: false
+    description: Consistent Monterey Bay pronunciation
