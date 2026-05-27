@@ -1,69 +1,61 @@
 entities:
-  - name: customer_name
-    description: The caller's full name for the booking or inquiry
-    entity_type: name_config
-    config: {}
-
-  - name: adult_count
-    description: Number of adults in the booking party
-    entity_type: numeric
-    config:
-      has_decimal: false
-      has_range: true
-      min: 0
-      max: 60
-
-  - name: child_count
-    description: Number of children in the booking party
-    entity_type: numeric
-    config:
-      has_decimal: false
-      has_range: true
-      min: 0
-      max: 60
-
-  - name: party_size
-    description: Total number of guests, including adults and children
-    entity_type: numeric
-    config:
-      has_decimal: false
-      has_range: true
-      min: 1
-      max: 120
-
-  - name: trip_date
-    description: Date the caller wants to go whale watching or take a cruise
-    entity_type: date
-    config:
-      relative_date: true
-
-  - name: trip_time
-    description: Preferred departure time such as morning, afternoon, sunset, or a specific time
-    entity_type: time
-    config:
-      enabled: true
-      start_time: "06:00"
-      end_time: "22:00"
-
-  - name: trip_type
-    description: Type of Sanctuary Cruises trip the caller wants (e.g. whale watching, sunset cruise, all-day trip, photography tour, private charter)
-    entity_type: free_text
-    config: {}
-
-  - name: contact_phone
-    description: Caller phone number for follow-up
-    entity_type: phone_number
-    config:
-      enabled: true
-      country_codes:
-        - "1"
-
-  - name: contact_email
-    description: Caller email address for follow-up
-    entity_type: free_text
-    config: {}
-
-  - name: occasion
-    description: Occasion for a private charter or special trip, such as birthday, family trip, proposal, corporate event, or memorial
-    entity_type: free_text
-    config: {}
+- name: customer_name
+  description: The caller's full name for the booking or inquiry
+  entity_type: name_config
+  config: {}
+- name: adult_count
+  description: Number of adults in the booking party
+  entity_type: numeric
+  config:
+    has_decimal: false
+    has_range: true
+    min: 0
+    max: 60
+- name: child_count
+  description: Number of children in the booking party
+  entity_type: numeric
+  config:
+    has_decimal: false
+    has_range: true
+    min: 0
+    max: 60
+- name: party_size
+  description: Total number of guests, including adults and children
+  entity_type: numeric
+  config:
+    has_decimal: false
+    has_range: true
+    min: 1
+    max: 120
+- name: trip_date
+  description: Date the caller wants to go whale watching or take a cruise
+  entity_type: date
+  config: {}
+- name: trip_time
+  description: Preferred departure time such as morning, afternoon, sunset, or a specific time
+  entity_type: time
+  config:
+    enabled: true
+    start_time: 06:00
+    end_time: 22:00
+- name: trip_type
+  description: Type of Sanctuary Cruises trip the caller wants (e.g. whale watching, sunset cruise, 
+    all-day trip, photography tour, private charter)
+  entity_type: free_text
+  config: {}
+- name: contact_phone
+  description: Caller phone number for follow-up
+  entity_type: phone_number
+  config:
+    enabled: true
+    country_codes:
+    - '1'
+- name: contact_email
+  description: Caller email address for follow-up
+  entity_type: free_text
+  config: {}
+- name: occasion
+  description: Occasion for a private charter or special trip, such as birthday, family trip, 
+    proposal, corporate event, or memorial
+  entity_type: free_text
+  config: {}
