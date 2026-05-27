@@ -1,14 +1,6 @@
 name: Private Charter
 enabled: true
-example_queries:
-  - I want to book a private whale watching trip just for my family
-  - Do you do private charters?
-  - Can we rent out the whole boat?
-  - We're planning a corporate team building event on the water
-  - I'm proposing to my partner, can we have the boat to ourselves?
-  - Is there a way to book the whole vessel for a birthday party?
-  - We want a private trip for about 25 people
-actions: |
+actions: |-
   Private charters require direct crew coordination for logistics, vessel selection, staffing, and pricing. Do not quote exact charter prices — these depend on group size, trip length, and date.
 
   Collect from the caller:
@@ -21,7 +13,7 @@ actions: |
   Then let them know the crew will be in touch to confirm details and pricing. Use {{fn:escalate_call}} to hand off to crew.
 
   If they want a quick ballpark, say private charters typically start around $500 to $1000 depending on group size and duration, but exact pricing must come from the crew.
-content: |
+content: |-
   Sanctuary Cruises offers private whale watching and marine wildlife charters for groups ranging from 6 to over 100 guests depending on the vessel.
 
   Common private charter uses include birthday celebrations, corporate events, memorial services, proposals, photography expeditions, and school field trips.
@@ -30,3 +22,11 @@ content: |
 
   Contact: 831-917-1042 or crew@sanctuarycruises.com
   Location: Moss Landing, CA 95039
+example_queries:
+- I want to book a private whale watching trip just for my family
+- Do you do private charters?
+- Can we rent out the whole boat?
+- We're planning a corporate team building event on the water
+- I'm proposing to my partner, can we have the boat to ourselves?
+- Is there a way to book the whole vessel for a birthday party?
+- We want a private trip for about 25 people

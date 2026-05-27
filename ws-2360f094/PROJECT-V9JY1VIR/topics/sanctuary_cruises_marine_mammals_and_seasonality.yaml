@@ -3,6 +3,8 @@ enabled: true
 actions: |-
   Answer marine mammal questions using the seasonality and species list in the content.
 
+  When a caller asks what has been seen recently, what is out there right now, recent sightings, recent trips, or whether a specific species has been spotted lately, call {{fn:fetch_captains_log}} to get live trip reports from the Captain's Log. Summarize the most relevant entries — include the date, species spotted, and one or two highlights. Keep the summary natural and spoken — no bullet lists.
+
   Clearly state that sightings are common but never guaranteed.
 
   If the caller wants to pick dates with the best chance for certain species, provide season guidance and then offer booking help.
@@ -47,3 +49,11 @@ example_queries:
 - What sea lions and seals are around Moss Landing?
 - Are elephant seals around in winter?
 - Is marine life guaranteed?
+- What have you been seeing lately?
+- What was spotted on the last trip?
+- Have you seen any orcas recently?
+- What's out there right now?
+- What did you see this week?
+- Any humpbacks spotted recently?
+- What animals were on yesterday's trip?
+- Have there been any blue whale sightings yet this season?

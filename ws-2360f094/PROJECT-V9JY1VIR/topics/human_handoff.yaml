@@ -1,21 +1,6 @@
 name: Human Handoff
 enabled: true
-example_queries:
-  - Can I speak to a real person?
-  - I want to talk to someone at Sanctuary Cruises
-  - Let me talk to the crew
-  - I have a complaint
-  - My booking got messed up
-  - I need to cancel my reservation
-  - I already have a booking and need to change it
-  - I was double charged
-  - I need a refund
-  - I have a medical question about the trip
-  - I have a disability and need to ask about accessibility
-  - I need to bring a service animal
-  - The trip was cancelled and I haven't heard back
-  - This is an emergency
-actions: |
+actions: |-
   For any request that involves:
   - complaints
   - refunds or billing disputes
@@ -35,10 +20,25 @@ actions: |
   Phone: 831-917-1042
   Email: crew@sanctuarycruises.com
   Hours: Typically 7 AM to 6 PM Pacific, seven days a week during season.
-content: |
+content: |-
   Sanctuary Cruises crew handles escalated calls, refund requests, booking changes, accessibility accommodations, and other sensitive topics.
 
   Direct contact:
   - Phone: 831-917-1042
   - Email: crew@sanctuarycruises.com
   - Location: Moss Landing, CA 95039
+example_queries:
+- Can I speak to a real person?
+- I want to talk to someone at Sanctuary Cruises
+- Let me talk to the crew
+- I have a complaint
+- My booking got messed up
+- I need to cancel my reservation
+- I already have a booking and need to change it
+- I was double charged
+- I need a refund
+- I have a medical question about the trip
+- I have a disability and need to ask about accessibility
+- I need to bring a service animal
+- The trip was cancelled and I haven't heard back
+- This is an emergency

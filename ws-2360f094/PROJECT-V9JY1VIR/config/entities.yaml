@@ -30,7 +30,8 @@ entities:
 - name: trip_date
   description: Date the caller wants to go whale watching or take a cruise
   entity_type: date
-  config: {}
+  config:
+    relative_date: false
 - name: trip_time
   description: Preferred departure time such as morning, afternoon, sunset, or a specific time
   entity_type: time
