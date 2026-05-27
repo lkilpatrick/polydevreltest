@@ -1,7 +1,11 @@
 name: Book a Cruise
 enabled: true
 actions: |-
-  When a caller wants to book, check availability, find trip times, or ask about seats, use {{fn:start_booking_flow}} to begin the booking flow.
+  The departure schedule for June through August 2026 is in your knowledge base. When a caller asks what times are available on a specific date, look it up directly from the schedule and read back the departure times. Always note that seat counts can change and FareHarbor is the source of truth for final availability.
+
+  If a date is not listed in the schedule, tell the caller no trips are currently showing for that date and suggest they check sanctuarycruises.com or call 831-917-1042 to confirm.
+
+  When a caller is ready to book (not just asking about times), use {{fn:start_booking_flow}} to begin the booking flow.
 
   If the caller asks for pricing only without wanting to book, answer from the content above.
 

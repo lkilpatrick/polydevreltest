@@ -139,6 +139,116 @@ Common species include Sooty Shearwaters, Brown Pelicans, Brandt's Cormorants, C
 | November | Humpbacks, orca |
 | December | Gray whales begin, orca |
 
+---
+
+## Departure Schedule — June through August 2026
+
+This is a FareHarbor snapshot captured May 27, 2026. Departure times and seat counts change — always confirm with FareHarbor before promising anything. Days not listed have no scheduled trips.
+
+### June 2026
+
+| Date | Departures |
+|------|------------|
+| Monday, June 1 | 8:00 AM, 11:30 AM |
+| Tuesday, June 2 | 8:00 AM, 11:30 AM |
+| Wednesday, June 3 | 8:00 AM, 11:30 AM |
+| Thursday, June 4 | 8:00 AM, 11:30 AM |
+| Friday, June 5 | 8:00 AM, 11:30 AM |
+| Saturday, June 6 | 8:00 AM, 11:30 AM, 3:30 PM |
+| Sunday, June 7 | 8:00 AM, 11:30 AM |
+| Monday, June 8 | 8:00 AM, 11:30 AM |
+| Tuesday, June 9 | 8:00 AM, 11:30 AM |
+| Wednesday, June 10 | 12:00 PM |
+| Thursday, June 11 | 8:00 AM, 11:30 AM |
+| Friday, June 12 | 8:00 AM, 11:30 AM, 2:30 PM |
+| Saturday, June 13 | 8:00 AM, 11:30 AM |
+| Sunday, June 14 | 8:00 AM, 11:30 AM |
+| Monday, June 15 | 8:00 AM, 11:30 AM |
+| Tuesday, June 16 | 8:00 AM, 11:30 AM |
+| Wednesday, June 17 | 8:00 AM, 11:30 AM |
+| Thursday, June 18 | 8:00 AM, 11:30 AM |
+| Friday, June 19 | 8:00 AM, 11:30 AM |
+| Saturday, June 20 | 8:00 AM, 11:30 AM |
+| Sunday, June 21 | 8:00 AM, 11:30 AM |
+| Monday, June 22 | 8:00 AM, 11:30 AM |
+| Tuesday, June 23 | 8:00 AM, 11:30 AM |
+| Wednesday, June 24 | 8:00 AM, 11:30 AM |
+| Thursday, June 25 | 8:00 AM, 11:30 AM |
+| Friday, June 26 | 8:00 AM, 11:30 AM |
+| Saturday, June 27 | 8:00 AM, 11:30 AM |
+| Sunday, June 28 | 8:00 AM, 11:30 AM |
+| Monday, June 29 | 8:00 AM, 11:30 AM |
+| Tuesday, June 30 | 8:00 AM, 11:30 AM |
+
+### July 2026
+
+| Date | Departures |
+|------|------------|
+| Wednesday, July 1 | 8:00 AM, 11:30 AM, 4:30 PM |
+| Thursday, July 2 | 8:00 AM, 11:30 AM, 3:00 PM |
+| Friday, July 3 | 8:00 AM, 11:30 AM, 3:30 PM |
+| Saturday, July 4 | 8:00 AM, 11:30 AM |
+| Sunday, July 5 | 8:00 AM, 11:30 AM, 3:30 PM |
+| Monday, July 6 | 8:00 AM, 11:30 AM |
+| Tuesday, July 7 | 8:00 AM, 11:30 AM |
+| Wednesday, July 8 | 8:00 AM, 12:30 PM |
+| Thursday, July 9 | 8:00 AM, 11:30 AM |
+| Friday, July 10 | 8:00 AM, 11:30 AM |
+| Saturday, July 11 | 8:00 AM, 11:30 AM |
+| Sunday, July 12 | 8:00 AM, 11:30 AM |
+| Monday, July 13 | 8:00 AM, 11:30 AM |
+| Tuesday, July 14 | 8:00 AM, 11:30 AM |
+| Wednesday, July 15 | 8:00 AM, 11:30 AM |
+| Thursday, July 16 | 8:00 AM, 3:00 PM |
+| Friday, July 17 | 8:00 AM, 11:30 AM |
+| Saturday, July 18 | 8:00 AM, 11:30 AM, 3:30 PM |
+| Sunday, July 19 | 8:00 AM, 11:30 AM, 3:30 PM |
+| Monday, July 20 | 8:00 AM, 11:30 AM |
+| Tuesday, July 21 | 8:00 AM, 11:30 AM |
+| Wednesday, July 22 | 8:00 AM, 11:30 AM |
+| Thursday, July 23 | 8:00 AM, 11:30 AM |
+| Friday, July 24 | 8:00 AM, 11:30 AM, 2:30 PM |
+| Saturday, July 25 | 8:00 AM, 11:30 AM, 3:30 PM |
+| Sunday, July 26 | 8:00 AM, 11:30 AM, 3:30 PM |
+| Monday, July 27 | 8:00 AM, 11:30 AM |
+| Wednesday, July 29 | 8:00 AM, 12:30 PM |
+| Thursday, July 30 | 8:00 AM, 11:30 AM |
+| Friday, July 31 | 8:00 AM, 11:30 AM |
+
+### August 2026
+
+| Date | Departures |
+|------|------------|
+| Saturday, August 1 | 8:00 AM, 11:30 AM, 3:30 PM |
+| Sunday, August 2 | 8:00 AM, 11:30 AM |
+| Monday, August 3 | 8:00 AM, 11:30 AM |
+| Tuesday, August 4 | 8:00 AM, 11:30 AM |
+| Wednesday, August 5 | 8:00 AM, 11:30 AM |
+| Thursday, August 6 | 8:00 AM, 11:30 AM |
+| Friday, August 7 | 8:00 AM, 11:30 AM |
+| Saturday, August 8 | 8:00 AM, 11:30 AM |
+| Sunday, August 9 | 8:00 AM, 11:30 AM |
+| Monday, August 10 | 8:00 AM, 11:30 AM |
+| Tuesday, August 11 | 8:00 AM, 11:30 AM |
+| Thursday, August 13 | 8:00 AM, 11:30 AM |
+| Friday, August 14 | 8:00 AM, 11:30 AM |
+| Saturday, August 15 | 8:00 AM, 11:30 AM |
+| Sunday, August 16 | 8:00 AM, 11:30 AM |
+| Monday, August 17 | 8:00 AM, 12:30 PM |
+| Tuesday, August 18 | 8:00 AM, 11:30 AM |
+| Wednesday, August 19 | 8:00 AM, 11:30 AM |
+| Thursday, August 20 | 8:00 AM, 11:30 AM |
+| Friday, August 21 | 8:00 AM, 11:30 AM |
+| Saturday, August 22 | 8:00 AM, 11:30 AM |
+| Sunday, August 23 | 8:00 AM, 11:30 AM |
+| Monday, August 24 | 8:00 AM, 11:30 AM |
+| Tuesday, August 25 | 8:00 AM, 11:30 AM |
+| Thursday, August 27 | 8:00 AM, 11:30 AM |
+| Friday, August 28 | 8:00 AM, 11:30 AM |
+| Saturday, August 29 | 8:00 AM, 11:30 AM |
+| Sunday, August 30 | 8:00 AM, 11:30 AM |
+| Monday, August 31 | 8:00 AM, 11:30 AM |
+
 Note: Sightings are never guaranteed. Conditions and wildlife distribution change daily.
 
 ---
